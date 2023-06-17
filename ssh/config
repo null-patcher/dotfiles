@@ -1,0 +1,106 @@
+AddKeysToAgent yes
+IdentityFile ~/.ssh/id_rsa
+
+Host rtr-all59197-all-dev.com.e4.c.emag.network
+  HostName rtr-all59197-all-dev.com.e4.c.emag.network
+
+Host dms-all42333-all-dev.adr.e5.c.emag.network
+  HostName dms-all42333-all-dev.adr.e5.c.emag.network
+
+Host *
+  User robert.piringiu
+  ForwardAgent yes
+  PubkeyAcceptedAlgorithms +ssh-rsa
+  HostkeyAlgorithms +ssh-rsa
+  SetEnv TERM=xterm
+
+Host adr.rtr-ro
+  HostName rtr-all54935-all-dev.adr.e5.c.emag.network
+  RequestTTY force
+  RemoteCommand cd /var/www/adr.rtr-ro/release && bash -l
+
+Host adr-test.rtr-hu
+  HostName rtr-all28474-all-dev.adr.e5.c.emag.network
+  RequestTTY force
+  RemoteCommand cd /var/www/adr-test.rtr-hu/release && bash -l
+
+Host fbe-test.rtr-ro
+  HostName rtr-all65199-all-dev.om3.e4.c.emag.network
+  RequestTTY force
+  RemoteCommand cd /var/www/fbe-test.rtr-ro/release && bash -l
+
+Host fbe-test.ieis-rbh
+  HostName ieis-all51655-all-dev.om3.e4.c.emag.network
+  RequestTTY force
+  RemoteCommand cd /var/www/fbe-test.ieis-ro/release && bash -l
+
+Host adr-test.rtr-ro
+  HostName rtr-all16121-all-dev.adr.e5.c.emag.network
+  RequestTTY force
+  RemoteCommand cd /var/www/adr-test.rtr-ro/release && bash -l
+
+Host balance-dev.rtr-ro
+  HostName rtr-all64144-all-dev.adr.e5.c.emag.network
+  RequestTTY force
+  RemoteCommand cd /var/www/balance-dev.rtr-ro/release && bash -l
+
+Host balance-dev.ieis-ro
+  HostName ieis-all74819-all-dev.adr.e5.c.emag.network
+  RequestTTY force
+  RemoteCommand cd /var/www/balance-dev.ieis-ro/release && bash -l
+
+Host rtr-ro.stage
+  HostName rtr-www10-ro-stage.emag.network
+
+Host offer-all27780-all-dev.adr.e5.c.emag.network
+  HostName offer-all27780-all-dev.adr.e5.c.emag.network
+
+Host adr-test.ieis-ro
+  HostName ieis-all13579-all-dev.adr.e5.c.emag.network
+
+Host rev-all11235-all-dev.adr.e5.c.emag.network
+  HostName rev-all11235-all-dev.adr.e5.c.emag.network
+
+Host rev-all54602-all-dev.adr.e5.c.emag.network
+  HostName rev-all54602-all-dev.adr.e5.c.emag.network
+
+Host adr-test.sea-app.sea-all71938-all-dev.adr.e5.c.emag.network
+  HostName adr-test.sea-app.sea-all71938-all-dev.adr.e5.c.emag.network
+
+Host mktp-php72-all72050-all-dev.adr.e5.c.emag.network
+  HostName mktp-php72-all72050-all-dev.adr.e5.c.emag.network
+
+Host wmsi-all29374-all-dev.com.e4.c.emag.network
+  HostName wmsi-all29374-all-dev.com.e4.c.emag.network
+
+Host wmsi-all18950-all-dev.adr.e5.c.emag.network
+  HostName wmsi-all18950-all-dev.adr.e5.c.emag.network
+
+Host adr-test.dms
+  HostName dms-all42333-all-dev.adr.e5.c.emag.network
+
+Host release
+  HostName edeploy.emag.local
+
+Host rtr-ro.stage
+  HostName rtr-www10-ro-stage.emag.network
+
+Host rtr-ro.www1
+  HostName rtr-www10-ro-prod.emag.network
+
+Host rtr-ro.worker1
+  HostName rtr-worker1-ro-prod.emag.network
+
+Host adr.mktp-ro
+  HostName mktp-php72-all57793-all-dev.adr.e5.c.emag.network
+  RequestTTY force
+  RemoteCommand cd /var/www/adr.mktp-ro/release && bash -l
+
+Host docker-balance
+  HostName gen-docker36673-all-dev.adr.e5.c.emag.network
+
+Host vlad-docker
+  HostName gen-docker48305-all-dev.adr.e5.c.emag.network
+
+Host core-edeploy
+  HostName core-edeploy1-all-prod.emag.network

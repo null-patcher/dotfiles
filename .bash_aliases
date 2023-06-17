@@ -1,0 +1,3 @@
+alias emagvpn='bash /home/robert-piringiu/emag-vpn.sh'
+alias sys-update='sudo apt update && sudo apt full-upgrade -y && sudo apt autoremove -y'
+alias dbeaver='GDK_BACKEND=x11 dbeaver'
