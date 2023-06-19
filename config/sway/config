@@ -67,10 +67,12 @@ output * bg  /home/robert-piringiu/Pictures/kid-goku-with-shenron-dragon-ball-th
 # Read `man 5 sway-input` for more information about this section.
 
 # Autostart
-
-exec eval $(gnome-keyring-daemon --start)
-exec export SSH_AUTH_SOCK
-
+exec dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP=sway
+# exec eval $(gnome-keyring-daemon --start)
+# exec export SSH_AUTH_SOCK
+bindsym $mod+n exec makoctl dismiss
+bindsym $mod+Shift+n exec makoctl dismiss -a
+exec mako
 ### Key bindings
 #
 # Basics:

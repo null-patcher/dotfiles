@@ -79,6 +79,11 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(git)
 
+plugins=(ssh-agent)
+zstyle :omz:plugins:ssh-agent agent-forwarding yes
+zstyle :omz:plugins:ssh-agent identities id_rsa
+zstyle :omz:plugins:ssh-agent quiet yes
+zstyle :omz:plugins:ssh-agent lazy yes
 source $ZSH/oh-my-zsh.sh
 source $HOME/.bash_aliases
 
@@ -129,11 +134,13 @@ case ":$PATH:" in
 esac
 # pnpm end
 
-export XDG_CURRENT_DESKTOP=sway
-# eval `ssh-agent -s`
-# ssh-add ~/.ssh/id_rsa
+
+# if [ "$SSH_AUTH_SOCK" = "" -a -x ssh-agent ]; then
+#  eval `ssh-agent -s` > /dev/null
+#  ssh-add ~/.ssh/id_rsa > /dev/null
+# fi
 #
-if ! pgrep -u "$USER" ssh-agent > /dev/null; then
-    ssh-agent > "$XDG_RUNTIME_DIR/ssh-agent.env"
-fi
+#if ! pgrep -u "$USER" ssh-agent > /dev/null; then
+#    ssh-agent > "$XDG_RUNTIME_DIR/ssh-agent.env"
+#fi
 
