@@ -7,17 +7,17 @@ selection:
 font:
   # The normal (roman) font face to use.
   normal:
-    family: MesloLGS NF
+    family: JetBrainsMonoNLNerdFont
     style: Regular
 
   # The bold font face
   bold:
-    family: MesloLGS NF
+    family: JetBrainsMonoNLNerdFont
     style: Bold
 
   # The italic font face
   italic:
-    family: MesloLGS NF
+    family: JetBrainsMonoNLNerdFont
     style: Italic
 
   # Point size of the font
