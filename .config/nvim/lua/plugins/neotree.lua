@@ -1,6 +1,5 @@
 return {
   "nvim-neo-tree/neo-tree.nvim",
-  dependencies = { "catppuccin/nvim" },
   opts = {
     filesystem = {
       filtered_items = {
