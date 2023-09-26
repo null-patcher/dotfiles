@@ -1,4 +1,10 @@
+if true then
+  return {}
+end
+
 return {
   "nvim-notify",
-  enabled = false,
+  -- config = function (_, opts)
+  --   require("notify")
+  -- end
 }
