@@ -1,10 +1,12 @@
-if true then
-  return {}
-end
+-- if true then
+--   return {}
+-- end
 
 return {
-  "nvim-notify",
-  -- config = function (_, opts)
-  --   require("notify")
-  -- end
+  "rcarriga/nvim-notify",
+  config = function(_, _)
+    require("notify").setup({
+      background_colour = "#000000",
+    })
+  end,
 }
