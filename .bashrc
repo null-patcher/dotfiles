@@ -44,6 +44,15 @@ esac
 # should be on the output of commands, not on the prompt
 #force_color_prompt=yes
 
+export CLICOLOR=1 #Colors in terminal
+
+export LSCOLORS=ExFxCxDxBxegedabagacad
+
+GIT_PS1_SHOWDIRTYSTATE=true #Shows the state of the repo(dirty if there are uncommitted changes)
+
+GIT_PS1_SHOWCOLORHINTS=true #SHows colors in git status display and diff
+
+
 if [ -n "$force_color_prompt" ]; then
     if [ -x /usr/bin/tput ] && tput setaf 1 >&/dev/null; then
 	# We have color support; assume it's compliant with Ecma-48
@@ -56,9 +65,9 @@ if [ -n "$force_color_prompt" ]; then
 fi
 
 if [ "$color_prompt" = yes ]; then
-    PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
+    PS1='${debian_chroot:+($debian_chroot)}\[\033[01;34m\]\w\[\033[00m\]\[\033[01;32m\]$(__git_ps1 ":%s")\[\033[00m\]$ '
 else
-    PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w\$ '
+    PS1='${debian_chroot:+($debian_chroot)}\w:$(__git_ps1 ":%s")$ '
 fi
 unset color_prompt force_color_prompt
 
@@ -90,6 +99,7 @@ fi
 alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
+alias ls='ls -al'
 
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
@@ -114,16 +124,7 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
-
-export CLICOLOR=1 #Colors in terminal
-
-export LSCOLORS=ExFxCxDxBxegedabagacad
-
-GIT_PS1_SHOWDIRTYSTATE=true #Shows the state of the repo(dirty if there are uncommitted changes)
-
-GIT_PS1_SHOWCOLORHINTS=true #SHows colors in git status display and diff
-
-PS1='\a\n\e[01;32m\u@\h on \d at \@\n\e[0;37m\w\e[0m$(__git_ps1 " (%s)")\n$ '
+# PS1='\a\n\e[01;32m\u@\h on \d at \@\n\e[0;37m\w\e[0m$(__git_ps1 " (%s)")\n$ '
 
 export WB_FORCE_SYSTEM_COLORS=1
 
@@ -200,3 +201,18 @@ elif type compctl &>/dev/null; then
   compctl -K _npm_completion npm
 fi
 ###-end-npm-completion-###
+. "$HOME/.cargo/env"
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+# pnpm
+export PNPM_HOME="~/.local/share/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+# pnpm end
+
+
+source <(kubectl completion bash)

@@ -1,6 +1,7 @@
 [MIME Cache]
-application/xhtml_xml=webapp-Teams0495.desktop;
-text/html=webapp-Teams0495.desktop;
-text/xml=webapp-Teams0495.desktop;
+application/xhtml_xml=webapp-Teams0495.desktop;webapp-YoutubeMusic5584.desktop;
+text/html=webapp-Teams0495.desktop;webapp-YoutubeMusic5584.desktop;
+text/xml=webapp-Teams0495.desktop;webapp-YoutubeMusic5584.desktop;
 x-scheme-handler/eclipse+command=_usr_share_dbeaver-ce_.desktop;
 x-scheme-handler/joplin=appimagekit-joplin.desktop;
+x-scheme-handler/mailto=chrome-faolnafnngnfdaknnbpnkhgohbobgegn-Default.desktop;
