@@ -4,7 +4,9 @@ return {
     ensure_installed = {
       "stylua",
       "shfmt",
-      "phpactor@2023.06.17-2",
+      "phpactor",
+      "djlint",
+      "tsserver",
     },
   },
 }

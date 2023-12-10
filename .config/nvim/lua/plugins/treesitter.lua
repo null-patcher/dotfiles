@@ -18,6 +18,7 @@ return {
       "regex",
       "tsx",
       "typescript",
+      "twig",
       "vim",
       "vimdoc",
       "yaml",
