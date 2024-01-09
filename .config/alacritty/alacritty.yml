@@ -11,15 +11,17 @@ shell:
 
 font:
   normal:
-    family: MonaspiceAr Nerd Font Mono
+    # family: MonaspiceAr Nerd Font Mono
     style: Regular
+  size: 12
 
 env:
   TERM: xterm-256color
 
-#import:
+import:
 # - ~/.config/alacritty/catppuccin/catppuccin-mocha.yml
-#  - ~/.config/alacritty/catppuccin/catppuccin-macchiato.yml
+# - ~/.config/alacritty/catppuccin/catppuccin-macchiato.yml
 #  - ~/.config/alacritty/catppuccin/catppuccin-frappe.yml
 #  - ~/.config/alacritty/catppuccin/catppuccin-latte.yml
-#  - ~/.config/alacritty/themes/gruvbox.yml
+# - ~/.config/alacritty/themes/gruvbox.yml
+ - ~/.config/alacritty/themes/onedark.yml
