@@ -11,15 +11,15 @@ shell:
 
 font:
   normal:
-    # family: MonaspiceAr Nerd Font Mono
+    family: UbuntuMono Nerd Font Mono
     style: Regular
-  size: 12
+  size: 14
 
 env:
   TERM: xterm-256color
 
 import:
-# - ~/.config/alacritty/catppuccin/catppuccin-mocha.yml
+ # - ~/.config/alacritty/catppuccin/catppuccin-mocha.yml
 # - ~/.config/alacritty/catppuccin/catppuccin-macchiato.yml
 #  - ~/.config/alacritty/catppuccin/catppuccin-frappe.yml
 #  - ~/.config/alacritty/catppuccin/catppuccin-latte.yml
