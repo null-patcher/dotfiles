@@ -1,0 +1,9 @@
+set $laptop eDP-1
+bindswitch lid:on output $laptop disable
+bindswitch lid:off output $laptop enable
+
+bindsym Print exec grimshot copy area
+bindsym Shift+Print  exec grimshot copy output
+bindsym Ctrl+Print  exec grimshot copy window
+
+# set_from_resource wm.font gtk.font_name UbuntuMono Nerd Font Mono 11
