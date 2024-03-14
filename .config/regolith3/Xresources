@@ -1,7 +1,8 @@
-!regolith.look.path: /usr/share/regolith-look/dracula
-regolith.look.path: /usr/share/regolith-look/nord
 gtk.font_name: UbuntuMono Nerd Font Mono 11
 gtk.document_font_name: Ubuntu 11
 gtk.monospace_font_name: Ubuntu 11
 wm.bar.position: top
 wm.bar.status_config: $HOME/.config/regolith3/i3status-rs/config.toml
+!regolith.look.path: /usr/share/regolith-look/nord
+regolith.look.path: /usr/share/regolith-look/nord
+regolith.wallpaper.file: $HOME/.config/regolith3/wallpaper.jpg
