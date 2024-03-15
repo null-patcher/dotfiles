@@ -1,7 +1,7 @@
 window:
   startup_mode: Maximized
   decorations: none
-  opacity: 0.8
+  opacity: 0.85
 
 shell:
   program: /usr/bin/bash
@@ -17,12 +17,12 @@ font:
   size: 14
 
 env:
-  TERM: screen-256color
+  TERM: xterm-256color
 
-# import:
+import:
  # - ~/.config/alacritty/catppuccin/catppuccin-mocha.yml
 # - ~/.config/alacritty/catppuccin/catppuccin-macchiato.yml
 #  - ~/.config/alacritty/catppuccin/catppuccin-frappe.yml
 #  - ~/.config/alacritty/catppuccin/catppuccin-latte.yml
 # - ~/.config/alacritty/themes/gruvbox.yml
- # - ~/.config/alacritty/themes/onedark.yml
+ - ~/.config/alacritty/themes/onedark.yml
