@@ -184,7 +184,16 @@ require('lazy').setup({
       },
     },
   },
-
+  {
+    "tpope/vim-fugitive",
+    keys = {
+      {
+        "<leader>gb",
+        "<cmd>Git blame<CR>",
+        desc = "Git blame buffer",
+      },
+    },
+  },
   -- NOTE: Plugins can also be configured to run Lua code when they are loaded.
   --
   -- This is often very useful to both group configuration, as well as handle
@@ -466,7 +475,7 @@ require('lazy').setup({
       --        For example, to see the options for `lua_ls`, you could go to: https://luals.github.io/wiki/settings/
       local servers = {
         clangd = {},
-        gopls = {},
+        -- gopls = {},
         -- pyright = {},
         -- rust_analyzer = {},
         -- ... etc. See `:help lspconfig-all` for a list of all the pre-configured LSPs
