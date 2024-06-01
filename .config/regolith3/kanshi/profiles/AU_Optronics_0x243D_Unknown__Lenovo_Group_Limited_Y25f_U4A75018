@@ -1,4 +1,0 @@
-profile {
-	output "AU Optronics 0x243D Unknown" mode 1920x1080@60.031Hz position 0,0 transform normal scale 1 enable
-	output "Lenovo Group Limited Y25f U4A75018" mode 1920x1080@119.982Hz position 1920,0 transform normal scale 1 enable
-}

@@ -13,7 +13,7 @@ HISTCONTROL=ignoreboth
 
 # append to the history file, don't overwrite it
 shopt -s histappend
-
+source ~/.git-prompt.sh
 # for setting history length see HISTSIZE and HISTFILESIZE in bash(1)
 HISTSIZE=1000
 HISTFILESIZE=2000
@@ -127,10 +127,6 @@ fi
 # PS1='\a\n\e[01;32m\u@\h on \d at \@\n\e[0;37m\w\e[0m$(__git_ps1 " (%s)")\n$ '
 
 export WB_FORCE_SYSTEM_COLORS=1
-
-if [ $TILIX_ID ] || [ $VTE_VERSION ]; then
-        source /etc/profile.d/vte.sh
-fi
 
 ###-begin-npm-completion-###
 #
