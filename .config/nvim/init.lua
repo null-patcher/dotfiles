@@ -3,6 +3,7 @@ vim.g.maplocalleader = " "
 
 -- Set to true if you have a Nerd Font installed
 vim.g.have_nerd_font = true
+vim.g.netrw_banner = 0
 
 -- [[ Setting options ]]
 -- See `:help vim.opt`
@@ -822,6 +823,33 @@ require("lazy").setup({
       -- order to load the plugin when the command is run for the first time
       keys = {
         { "<leader>gg", "<cmd>LazyGit<cr>", desc = "LazyGit" },
+      },
+    },
+  },
+  {
+    {
+      "gbprod/phpactor.nvim",
+      build = function()
+        require("phpactor.handler.update")()
+      end,
+      dependencies = {
+        "nvim-lua/plenary.nvim",
+        "neovim/nvim-lspconfig",
+      },
+      opts = {
+        install = {
+          path = vim.fn.stdpath("data") .. "/lazy/",
+          branch = "master",
+          bin = vim.fn.stdpath("data") .. "/mason/packages/phpactor/bin/phpactor",
+          php_bin = "php",
+          composer_bin = "composer",
+          git_bin = "git",
+          check_on_startup = "none",
+        },
+        lspconfig = {
+          enabled = true,
+          options = {},
+        },
       },
     },
   },
