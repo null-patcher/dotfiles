@@ -1,4 +1,4 @@
-import = ["/home/robert-piringiu/.config/alacritty/themes/google.toml"]
+import = ["~/.config/alacritty/themes/google.toml"]
 
 [env]
 TERM = "screen-256color"

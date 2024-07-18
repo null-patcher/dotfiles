@@ -89,7 +89,8 @@ vim.keymap.set("n", "<leader>qq", "<cmd>qa<cr>", { desc = "Quit All" })
 -- NOTE: This won't work in all terminal emulators/tmux/etc. Try your own mapping
 -- or just use <C-\><C-n> to exit terminal mode
 vim.keymap.set("t", "<Esc><Esc>", "<C-\\><C-n>", { desc = "Exit terminal mode" })
-vim.keymap.set("n", "<leader>p", vim.cmd.Rex)
+vim.keymap.set("n", "<leader>p", vim.cmd.Ex)
+vim.keymap.set({ "n", "v" }, "<leader>cp", "<cmd>PhpActor<cr>")
 vim.keymap.set({ "n", "x" }, "j", "v:count == 0 ? 'gj' : 'j'", { expr = true, silent = true })
 vim.keymap.set({ "n", "x" }, "<Down>", "v:count == 0 ? 'gj' : 'j'", { expr = true, silent = true })
 vim.keymap.set({ "n", "x" }, "k", "v:count == 0 ? 'gk' : 'k'", { expr = true, silent = true })
@@ -212,18 +213,35 @@ require("lazy").setup({
   { -- Useful plugin to show you pending keybinds.
     "folke/which-key.nvim",
     event = "VimEnter", -- Sets the loading event to 'VimEnter'
-    config = function() -- This is the function that runs, AFTER loading
-      require("which-key").setup()
-
-      -- Document existing key chains
-      require("which-key").register({
-        ["<leader>c"] = { name = "[C]ode", _ = "which_key_ignore" },
-        ["<leader>d"] = { name = "[D]ocument", _ = "which_key_ignore" },
-        ["<leader>r"] = { name = "[R]ename", _ = "which_key_ignore" },
-        ["<leader>s"] = { name = "[S]earch", _ = "which_key_ignore" },
-        ["<leader>w"] = { name = "[W]orkspace", _ = "which_key_ignore" },
-      })
-    end,
+    opts = {
+      { "", group = "[C]ode" },
+      { "", desc = "<leader>r_", hidden = true },
+      { "", group = "[S]earch" },
+      { "", desc = "<leader>s_", hidden = true },
+      { "", group = "[W]orkspace" },
+      { "", group = "[R]ename" },
+      { "", group = "[D]ocument" },
+      { "", desc = "<leader>d_", hidden = true },
+      { "", desc = "<leader>c_", hidden = true },
+      { "", desc = "<leader>w_", hidden = true },
+    },
+    -- config = function() -- This is the function that runs, AFTER loading
+    --   require("which-key").setup()
+    --
+    --   -- Document existing key chains
+    --   require("which-key").register({
+    --     { "", group = "[C]ode" },
+    --     { "", desc = "<leader>r_", hidden = true },
+    --     { "", group = "[S]earch" },
+    --     { "", desc = "<leader>s_", hidden = true },
+    --     { "", group = "[W]orkspace" },
+    --     { "", group = "[R]ename" },
+    --     { "", group = "[D]ocument" },
+    --     { "", desc = "<leader>d_", hidden = true },
+    --     { "", desc = "<leader>c_", hidden = true },
+    --     { "", desc = "<leader>w_", hidden = true },
+    --   })
+    -- end,
   },
 
   -- NOTE: Plugins can specify dependencies.
@@ -488,6 +506,7 @@ require("lazy").setup({
         phpactor = {},
         phpstan = {},
         checkmake = {},
+        cmake = {},
         --
 
         lua_ls = {
@@ -510,6 +529,7 @@ require("lazy").setup({
       servers["docker-compose-language-service"] = {}
       servers["dockerfile-language-server"] = {}
       servers["html-lsp"] = {}
+      servers["php-cs-fixer"] = {}
 
       -- Ensure the servers and tools above are installed
       --  To check the current status of installed tools and/or manually install
@@ -839,7 +859,7 @@ require("lazy").setup({
         install = {
           path = vim.fn.stdpath("data") .. "/lazy/",
           branch = "master",
-          bin = vim.fn.stdpath("data") .. "/mason/packages/phpactor/bin/phpactor",
+          bin = vim.fn.stdpath("data") .. "/mason/packages/phpactor/phpactor",
           php_bin = "php",
           composer_bin = "composer",
           git_bin = "git",
@@ -893,5 +913,6 @@ require("lazy").setup({
   },
 })
 
+require("plugins/terminal")
 -- The line beneath this is called `modeline`. See `:help modeline`
 -- vim: ts=2 sts=2 sw=2 et
