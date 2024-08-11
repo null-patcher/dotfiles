@@ -859,7 +859,7 @@ require("lazy").setup({
         install = {
           path = vim.fn.stdpath("data") .. "/lazy/",
           branch = "master",
-          bin = vim.fn.stdpath("data") .. "/mason/packages/phpactor/phpactor",
+          bin = vim.fn.stdpath("data") .. "/mason/packages/phpactor/phpactor.phar",
           php_bin = "php",
           composer_bin = "composer",
           git_bin = "git",
