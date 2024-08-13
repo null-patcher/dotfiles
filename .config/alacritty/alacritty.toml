@@ -7,7 +7,7 @@ TERM = "screen-256color"
 size = 14
 
 [font.normal]
-family = "CaskaydiaCove NFM"
+family = "JetBrainsMono Nerd Font"
 style = "Regular"
 
 [shell]
@@ -17,4 +17,4 @@ program = "/usr/bin/bash"
 [window]
 decorations = "none"
 startup_mode = "Maximized"
-opacity = 0.7
+opacity = 0.8
