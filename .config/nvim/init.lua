@@ -88,7 +88,7 @@ vim.keymap.set("n", "<leader>qq", "<cmd>qa<cr>", { desc = "Quit All" })
 --
 -- NOTE: This won't work in all terminal emulators/tmux/etc. Try your own mapping
 -- or just use <C-\><C-n> to exit terminal mode
-vim.keymap.set("t", "<Esc><Esc>", "<C-\\><C-n>", { desc = "Exit terminal mode" })
+-- vim.keymap.set("t", "<Esc><Esc>", "<C-\\><C-n>", { desc = "Exit terminal mode" })
 vim.keymap.set("n", "<leader>p", vim.cmd.Ex)
 vim.keymap.set({ "n", "v" }, "<leader>cp", "<cmd>PhpActor<cr>")
 vim.keymap.set({ "n", "x" }, "j", "v:count == 0 ? 'gj' : 'j'", { expr = true, silent = true })
@@ -760,7 +760,7 @@ require("lazy").setup({
       --  and try some other statusline plugin
       local statusline = require("mini.statusline")
       -- set use_icons to true if you have a Nerd Font
-      statusline.setup({ use_icons = vim.g.have_nerd_font })
+      statusline.setup({ use_icons = vim.g.have_nerd_font, set_vim_settings = true })
 
       -- You can configure sections in the statusline by overriding their
       -- default behavior. For example, here we set the section for
