@@ -1,10 +1,10 @@
-import = ["~/.config/alacritty/themes/google.toml"]
+# import = ["~/.config/alacritty/themes/google.toml"]
 
 [env]
 TERM = "screen-256color"
 
 [font]
-size = 14
+size = 13
 
 [font.normal]
 family = "JetBrainsMono Nerd Font"
