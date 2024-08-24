@@ -1,4 +1,4 @@
-import = ["~/.config/alacritty/themes/themes/github_dark_colorblind.toml"]
+import = ["~/.config/alacritty/themes/themes/terminal_app.toml"]
 
 [env]
 TERM = "screen-256color"
