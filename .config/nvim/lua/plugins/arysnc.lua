@@ -1,5 +1,4 @@
--- add arsync
 return {
-  "GosuTeacher/vim-arsync",
+  "KenN7/vim-arsync",
   dependencies = { "prabirshrestha/async.vim" },
 }
