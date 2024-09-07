@@ -1,4 +1,4 @@
-import = ["~/.config/alacritty/themes/themes/terminal_app.toml"]
+import = ["~/.config/alacritty/themes/xterm.toml"]
 
 [env]
 TERM = "screen-256color"
@@ -15,6 +15,7 @@ args = ["-l", "-c", "tmux attach || tmux"]
 program = "/usr/bin/bash"
 
 [window]
+dynamic_padding = true
 decorations = "none"
 startup_mode = "Maximized"
 opacity = 0.8

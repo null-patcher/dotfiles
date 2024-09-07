@@ -31,7 +31,7 @@ return { -- Collection of various small independent plugins/modules
       return "%2l:%-2v"
     end
 
-    vim.cmd.colorscheme("minischeme")
+    -- vim.cmd.colorscheme("minischeme")
     -- ... and there is more!
     --  Check out: https://github.com/echasnovski/mini.nvim
   end,
