@@ -1,4 +1,4 @@
-import = ["~/.config/alacritty/themes/xterm.toml"]
+import = ["~/.config/alacritty/themes/iterm.toml"]
 
 [env]
 TERM = "screen-256color"
