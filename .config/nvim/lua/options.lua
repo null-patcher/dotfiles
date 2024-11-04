@@ -80,3 +80,4 @@ vim.opt.termguicolors = true
 vim.opt.wrap = false
 vim.opt.colorcolumn = "120"
 vim.opt.undofile = true
+vim.cmd.colorscheme("habamax")

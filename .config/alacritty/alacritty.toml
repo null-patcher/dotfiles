@@ -1,13 +1,13 @@
-import = ["~/.config/alacritty/themes/iterm.toml"]
+import = ["~/.config/alacritty/themes/dracula.toml"]
 
 [env]
 TERM = "screen-256color"
 
 [font]
-size = 13
+size = 11
 
 [font.normal]
-family = "JetBrainsMono Nerd Font"
+family = "MesloLGS NF"
 style = "Regular"
 
 [shell]
@@ -16,6 +16,6 @@ program = "/usr/bin/bash"
 
 [window]
 dynamic_padding = true
-decorations = "none"
+# decorations = "none"
 startup_mode = "Maximized"
-opacity = 0.8
+# opacity = 0.8
