@@ -30,7 +30,7 @@ vcs_info_wrapper() {
 }
 # export PS1="%F{214}%m%F{015}:%F{039}%~%F{015}\$ "
 export PS1='%F{#f95b23}%n%f:%F{yellow}%~%f$(vcs_info_wrapper) $ '
-export RPROMPT='%t'
+export RPROMPT='%T'
 export CLICOLOR=1
 export LSCOLORS=gafacadabaegedabagacad
 export VISUAL=nvim
