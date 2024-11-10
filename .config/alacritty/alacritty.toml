@@ -1,21 +1,23 @@
-import = ["~/.config/alacritty/themes/iterm.toml"]
-
 [env]
-TERM = "screen-256color"
+TERM = "xterm-256color"
 
 [font]
-size = 13
+size = 12
 
 [font.normal]
-family = "JetBrainsMono Nerd Font"
+family = "JetBrains Mono Nerd Font"
 style = "Regular"
 
-[shell]
+[terminal.shell]
 args = ["-l", "-c", "tmux attach || tmux"]
-program = "/usr/bin/bash"
+program = "/usr/bin/zsh"
 
 [window]
 dynamic_padding = true
 decorations = "none"
 startup_mode = "Maximized"
 opacity = 0.8
+padding = { x=10, y=4}
+
+[general]
+import = ["~/.config/alacritty/themes/dracula.toml"]

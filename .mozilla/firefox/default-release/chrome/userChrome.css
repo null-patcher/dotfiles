@@ -1,6 +1,0 @@
-@-moz-document url(chrome://browser/content/browser.xul),
-               url(chrome://browser/content/browser.xhtml) {
-  #TabsToolbar {
-    visibility: collapse;
-  }
-}

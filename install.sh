@@ -1,8 +1,13 @@
-sudo add-apt-repository ppa:neovim-ppa/unstable
-sudo apt update
-sudo apt install zsh sway swaylock swayidle waybar neovim alacritty wl-clipboard clipman grim grimshot fzf
-git clone --depth 1 https://github.com/wbthomason/packer.nvim \
- ~/.local/share/nvim/site/pack/packer/start/packer.nvim
-sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
-
+sudo dnf copr enable solopasha/hyprland -y
+sudo dnf copr enable atim/lazygit -y
+sudo dnf update
+sudo dnf install hyprland wofi waybar zsh hyprshot grim slurp dunst fzf ripgrep lazygit composer alacritty tmux neovim openconnect
+cp -r .config/* ~/.config/
+cp .tmux.conf ~/
+cp .zshrc ~/
+cp .gitconfig ~/
+cp .gitignore ~/
+cp .ssh/* ~/.ssh
+cp -r .local/share/fonts/* ~/.local/share/fonts/
+fc-cache -v
+sudo fc-cache -v
