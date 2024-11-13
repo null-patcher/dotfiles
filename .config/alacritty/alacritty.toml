@@ -8,9 +8,11 @@ size = 12
 family = "JetBrains Mono Nerd Font"
 style = "Regular"
 
-[terminal.shell]
-args = ["-l", "-c", "tmux attach || tmux"]
-program = "/usr/bin/zsh"
+# [terminal.shell]
+# args = ["-l", "-c", "tmux attach || tmux"]
+# program = "/usr/bin/zsh"
+[selection]
+save_to_clipboard = true
 
 [window]
 dynamic_padding = true
