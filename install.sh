@@ -1,7 +1,7 @@
 sudo dnf copr enable solopasha/hyprland -y
 sudo dnf copr enable atim/lazygit -y
 sudo dnf update
-sudo dnf install hyprland wofi waybar zsh hyprshot grim slurp dunst fzf ripgrep lazygit composer alacritty tmux neovim openconnect
+sudo dnf install hyprland wofi waybar zsh hyprshot grim slurp dunst fzf ripgrep lazygit composer alacritty tmux neovim openconnect hyprlock
 composer global require jetbrains/phpstorm-stubs
 cp -r .config/* ~/.config/
 cp .tmux.conf ~/
