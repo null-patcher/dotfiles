@@ -11,4 +11,4 @@ cp .gitignore ~/
 cp .ssh/* ~/.ssh
 cp -r .local/share/fonts/* ~/.local/share/fonts/
 fc-cache -v
-sudo fc-cache -v
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
