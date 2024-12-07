@@ -77,9 +77,10 @@ vim.opt.hlsearch = true
 vim.opt.grepprg = "rg --vimgrep"
 vim.opt.smoothscroll = true
 vim.opt.termguicolors = true
-vim.opt.wrap = false
+vim.opt.wrap = true
 vim.opt.colorcolumn = "120"
 vim.opt.undofile = true
+vim.opt.textwidth = 120
 
 vim.opt.spelllang = "en_us"
 vim.opt.spell = true
