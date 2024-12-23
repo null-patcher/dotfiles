@@ -1,4 +1,4 @@
-#!/usr/bin/bash
+#!/usr/bin/env sh
     
     main(){
       MONITORS=$(hyprctl monitors all -j)
