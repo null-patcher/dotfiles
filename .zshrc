@@ -69,6 +69,8 @@ source ~/.config/zsh/plugins/ssh.zsh
 source ~/.config/zsh/plugins/keychain.zsh
 source ~/.config/zsh/plugins/ssh-agent.zsh
 source ~/.config/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source ~/.config/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+source <(fzf --zsh)
 
 alias evpn="sudo openconnect --no-dtls -b -u robert.piringiu vpn.emag.ro"
 alias lg="lazygit"

@@ -2,14 +2,14 @@
 TERM = "xterm-256color"
 
 [font]
-size = 12
+size = 11
 
 [font.normal]
 # family = "BlexMono Nerd Font Mono"
-# family = "JetBrains Mono Nerd Font"
+family = "JetBrains Mono Nerd Font"
 # family = "MesloLGS NF"
 # family = "MonaspiceAr Nerd Font Mono"
-family = "CaskaydiaCove Nerd Font Mono"
+# family = "CaskaydiaCove Nerd Font Mono"
 
 [terminal.shell]
 args = ["-l", "-c", "tmux attach || tmux"]
