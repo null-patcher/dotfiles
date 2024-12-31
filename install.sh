@@ -1,13 +1,14 @@
 sudo dnf copr enable solopasha/hyprland -y
 sudo dnf copr enable atim/lazygit -y
+sudo dnf copr enable pgdev/ghostty -y
 sudo dnf update
-sudo dnf install hyprland wofi zsh hyprshot grim slurp dunst fzf ripgrep lazygit composer alacritty tmux neovim openconnect hyprlock hyprpaper
+sudo dnf install hyprland vifm qt6ct wofi zsh hyprshot grim slurp dunst fzf ripgrep lazygit composer ghostty adw-gtk3-theme neovim openconnect hyprlock hyprpaper waypaper
 composer global require jetbrains/phpstorm-stubs
-git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 git clone https://github.com/zsh-users/zsh-autosuggestions ~/.config/zsh/plugins/zsh-autosuggestions
+git clone https://github.com/zsh-users/zsh-syntax-highlighting ~/.config/zsh/plugins/zsh-syntax-highlighting
 cp -r .config/* ~/.config/
-cp .tmux.conf ~/
 cp .zshrc ~/
+cp -r .vifm/ ~/
 cp .gitconfig ~/
 cp .gitignore ~/
 cp .ssh/* ~/.ssh
