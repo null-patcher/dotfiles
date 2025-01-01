@@ -15,6 +15,4 @@ return {
       { "", desc = "<leader>w_", hidden = true },
     },
   },
-
-  "xiyaowong/transparent.nvim",
 }

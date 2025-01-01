@@ -1,5 +1,5 @@
-theme=GitHub Dark
-background-opacity=0.8
+theme=tokyonight
+background-opacity=1
 gtk-titlebar=false
 window-padding-y=8
 window-padding-x=8
