@@ -12,3 +12,6 @@ keybind=shift+right=goto_split:right
 keybind=ctrl+shift+m=toggle_tab_overview
 gtk-wide-tabs=false
 adw-toolbar-style=flat
+font-feature=-calt
+font-feature=-liga
+font-feature=-dlig
