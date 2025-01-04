@@ -71,6 +71,11 @@ source ~/.config/zsh/plugins/ssh-agent.zsh
 source ~/.config/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source ~/.config/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 source <(fzf --zsh)
+source ~/.zshenv
 
 alias evpn="sudo openconnect --no-dtls -b -u robert.piringiu vpn.emag.ro"
 alias lg="lazygit"
+alias vim="nvim"
+alias vi="nvim"
+alias vf="vifm"
+
