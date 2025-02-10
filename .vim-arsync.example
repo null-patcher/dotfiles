@@ -1,0 +1,8 @@
+remote_host      
+remote_path      /var/www/afs-eva-all.emag.network/release
+remote_user      robert.piringiu
+ignore_path ["vendor",".git/",".env",".env.local",".env.docker","node_modules/","var/",".phpactor.json",".vim-arsync"]
+ignore_dotfiles  1
+auto_sync_up     1
+remote_or_local  remote
+remote_options   -tuOrze
