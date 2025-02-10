@@ -47,7 +47,7 @@ vim.opt.smartcase = true
 vim.opt.signcolumn = "yes"
 
 -- Decrease update time
-vim.opt.updatetime = 250
+vim.opt.updatetime = 50
 
 -- Decrease mapped sequence wait time
 -- Displays which-key popup sooner
@@ -77,6 +77,7 @@ vim.opt.hlsearch = true
 vim.opt.grepprg = "rg --vimgrep"
 vim.opt.smoothscroll = true
 vim.opt.termguicolors = true
-vim.opt.wrap = false
+vim.opt.wrap = true
 vim.opt.colorcolumn = "120"
 vim.opt.undofile = true
+vim.opt.textwidth = 120
