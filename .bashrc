@@ -237,4 +237,18 @@ esac
 # Aliases 
 alias evpn="sudo openconnect -u robert.piringiu -b --no-dtls vpn.emag.ro"
 
+export VISUAL=nvim
+export EDITOR="$VISUAL"
+alias lg="lazygit"
+alias vim="nvim"
+alias vi="nvim"
+alias vf="vifm"
+
+cd_fzf() {
+    cd "$(dirname "$(fzf)")"
+}
+bind -x '"\C-f":cd_fzf'
+
+source <(fzf --bash)
+
 source <(kubectl completion bash)
