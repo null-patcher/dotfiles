@@ -1,5 +1,6 @@
 theme=Adwaita Dark
 gtk-titlebar=false
+background-opacity=0.85
 command=tmux attach || tmux
 window-padding-y=8
 window-padding-x=8
