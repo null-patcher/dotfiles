@@ -301,10 +301,10 @@ return {
           --    https://github.com/L3MON4D3/LuaSnip?tab=readme-ov-file#keymaps
         }),
         sources = {
-          { name = "copilot", group_index = 2 },
+          { name = "copilot", group_index = 1 },
           { name = "nvim_lsp", group_index = 2 },
-          { name = "luasnip", group_index = 2 },
-          { name = "path", group_index = 2 },
+          { name = "path", group_index = 3 },
+          { name = "luasnip", group_index = 3 },
         },
       })
     end,
