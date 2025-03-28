@@ -168,11 +168,10 @@ return {
         },
       }
 
-      servers["twiggy-language-server"] = {}
       servers["docker-compose-language-service"] = {}
       servers["dockerfile-language-server"] = {}
-      servers["html-lsp"] = {}
       servers["php-cs-fixer"] = {}
+      servers["php-debug-adapter"] = {}
 
       -- Ensure the servers and tools above are installed
       --  To check the current status of installed tools and/or manually install
