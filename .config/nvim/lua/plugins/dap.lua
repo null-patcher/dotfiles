@@ -2,6 +2,7 @@
 
 return {
   "mfussenegger/nvim-dap",
+  lazy = true,
   dependencies = {
     -- Creates a beautiful debugger UI
     "rcarriga/nvim-dap-ui",
@@ -10,7 +11,6 @@ return {
   },
   config = function()
     local dap = require("dap")
-    require("dap-go").setup({})
     local dapui = require("dapui")
     dapui.setup({
       layouts = {
