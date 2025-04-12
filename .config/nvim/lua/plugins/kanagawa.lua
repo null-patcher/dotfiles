@@ -77,7 +77,7 @@ return {
     name = "onedark",
     priority = 1000,
     opts = {
-      style = "dark",
+      style = "light",
       transparent = true,
     },
     config = function(_, opts)
